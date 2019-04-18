@@ -5,7 +5,9 @@ import { createStore } from "redux";
 import { Provider } from "react-redux";
 import { SET_MESSAGE_DRAFT, SET_MESSAGE_STATE } from "./actionsTypes";
 import defaultState from "./simpleState.json";
-// import defaultState from "./complexState.json";
+/*
+import defaultState from "./complexState.json";
+*/
 
 import { whyDidYouUpdate } from "why-did-you-update";
 
