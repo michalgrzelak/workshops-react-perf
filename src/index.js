@@ -38,17 +38,6 @@ const store = createStore(
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 
-// change message2 state every second
-let last = false;
-setInterval(() => {
-  store.dispatch({
-    type: SET_MESSAGE_STATE,
-    index: 2,
-    messageState: last ? "seen" : "delivered"
-  });
-  last = !last;
-}, 1000);
-
 const rootElement = document.getElementById("root");
 ReactDOM.render(
   <Provider store={store}>
