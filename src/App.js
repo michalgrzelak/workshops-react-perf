@@ -20,7 +20,6 @@ class App extends React.Component {
 }
 
 const mapStateToProps = state => ({
-  messages: state.messages,
   messageDraft: state.messageDraft
 });
 
